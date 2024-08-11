@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop-project</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="font-arial bg-my-bg max-w-7xl m-auto">
+    <header class="bg-blue-700 p-5 text-2xl text-white mt-2.5 rounded-md shadow-md shadow-gray-400">
+        <p>Shop-Page | botostart Project</p>
+    </header>
+    <main>
+        <div id="Search" class="flex items-center max-lg:justify-center">
+            <input type="text" placeholder="Search name" id="Search-input"
+                class="w-80 p-0.5 text-lg bg-my-bg border-2 border-blue-700 text-blue-700 rounded-lg mt-6 mb-6">
+            <button class="shadow-md shadow-gray-400 ml-2" id="search-button">search</button>
+        </div>
+        <div class="max-lg:flex max-lg:justify-center mb-5" id="buttons">
+            <button class="filter shadow-md shadow-gray-400" data-name="all">All</button>
+            <button class="filter shadow-md shadow-gray-400" data-name="tech">Tech</button>
+            <button class="filter shadow-md shadow-gray-400" data-name="cloth">Clothing</button>
+            <button class="filter shadow-md shadow-gray-400" data-name="health">Health</button>
+        </div>
+        <div
+            class="flex items-center max-lg:flex max-lg:justify-center max-lg:items-center max-lg:gap-1 bg-blue-700 w-80 rounded-md p-5">
+            <input type="range" id="priceRange" min="0" max="2000" step="100" value="1000" class="w-80">
+            <span id="priceValue" class="text-white">1000</span>
+        </div>
+        <div id="products" class="flex flex-wrap justify-between max-lg:justify-center">
+            <div class="product-item bg-white w-80 mt-7 mb-7 ml-2 shadow-md shadow-gray-200 rounded-lg overflow-hidden p-3.5"
+                data-category="tech">
+                <img src="../img/iphone.png" alt="iphone14" class="w-72 rounded-lg mb-5">
+                <p class="text-gray-500 mt-1.5 mb-2 font-bold">Apple Iphone 14 Pro</p>
+                <span class="inline-block mb-0 bg-blue-700 text-white pt-1 pb-1 pl-2.5  pr-2.5 rounded-md">
+                    $1499
+                </span>
+            </div>
+            <div class="product-item bg-white w-80 mt-7 mb-7 ml-2 shadow-md shadow-gray-200 rounded-lg overflow-hidden p-3.5"
+                data-category="tech">
+                <img src="../img/watch.png" alt="appllle-Watch" class="w-72 rounded-lg mb-5">
+                <p class="text-gray-500 mt-1.5 mb-2 font-bold">Apple watch</p>
+                <span class="inline-block mb-0 bg-blue-700 text-white pt-0.5 pb-0.5 pl-2.5  pr-2 rounded-md">
+                    $1000
+                </span>
+            </div>
+            <div class="product-item bg-white w-80 mt-7 mb-7 ml-2 shadow-md shadow-gray-200 rounded-lg overflow-hidden p-3.5"
+                data-category="tech">
+                <img src="../img/airpods.png" alt="AirPods" class="w-72 rounded-lg mb-5">
+                <p class="text-gray-500 mt-1.5 mb-2 font-bold">Apple Air Pods pro</p>
+                <span class="inline-block mb-0 bg-blue-700 text-white pt-0.5 pb-0.5 pl-2.5  pr-2 rounded-md">
+                    $500
+                </span>
+            </div>
+            <div class="product-item bg-white w-80 mt-7 mb-7 ml-2 shadow-md shadow-gray-200 rounded-lg overflow-hidden p-3.5"
+                data-category="cloth">
+                <img src="../img/bag.png" alt="Bag" class="w-72 rounded-lg mb-5">
+                <p class="text-gray-500 mt-1.5 mb-2 font-bold">College Bag</p>
+                <span class="inline-block mb-0 bg-blue-700 text-white pt-0.5 pb-0.5 pl-2.5  pr-2 rounded-md">
+                    $60
+                </span>
+            </div>
+            <div class="product-item bg-white w-80 mt-7 mb-7 ml-2 shadow-md shadow-gray-200 rounded-lg overflow-hidden p-3.5"
+                data-category="cloth">
+                <img src="../img/jacket.png" alt="jacket" class="w-72 rounded-lg mb-5">
+                <p class="text-gray-500 mt-1.5 mb-2 font-bold">Boy's Jacket</p>
+                <span class="inline-block mb-0 bg-blue-700 text-white pt-0.5 pb-0.5 pl-2.5  pr-2 rounded-md">
+                    $120
+                </span>
+            </div>
+            <div class="product-item bg-white w-80 mt-7 mb-7 ml-2 shadow-md shadow-gray-200 rounded-lg overflow-hidden p-3.5"
+                data-category="cloth">
+                <img src="../img/shoes.png" alt="shoes" class="w-72 rounded-lg mb-5">
+                <p class="text-gray-500 mt-1.5 mb-2 font-bold">Running Shoes</p>
+                <span class="inline-block mb-0 bg-blue-700 text-white pt-0.5 pb-0.5 pl-2.5  pr-2 rounded-md">
+                    $45
+                </span>
+            </div>
+            <div class="product-item bg-white w-80 mt-7 mb-7 ml-2 shadow-md shadow-gray-200 rounded-lg overflow-hidden p-3.5"
+                data-category="health">
+                <img src="../img/shampoo.png" alt="Shampoo" class="w-72 rounded-lg mb-5">
+                <p class="text-gray-500 mt-1.5 mb-2 font-bold">keratin Hair Shampoo</p>
+                <span class="inline-block mb-0 bg-blue-700 text-white pt-0.5 pb-0.5 pl-2.5  pr-2 rounded-md">
+                    $12
+                </span>
+            </div>
+            <div class="product-item bg-white w-80 mt-7 mb-7 ml-2 shadow-md shadow-gray-200 rounded-lg overflow-hidden p-3.5"
+                data-category="health">
+                <img src="../img/vitamin.png" alt="vitamin" class="w-72 rounded-lg mb-5">
+                <p class="text-gray-500 mt-1.5 mb-2 font-bold">Vitamin C</p>
+                <span class="inline-block mb-0 bg-blue-700 text-white pt-0.5 pb-0.5 pl-2.5  pr-2 rounded-md">
+                    $3
+                </span>
+            </div>
+            <div class="product-item bg-white w-80 mt-7 mb-7 ml-2 shadow-md shadow-gray-200 rounded-lg overflow-hidden p-3.5"
+                data-category="health">
+                <img src="../img/cream.png " alt="cream" class="w-72 rounded-lg mb-5">
+                <p class="text-gray-500 mt-1.5 mb-2 font-bold">Face Cream</p>
+                <span class="inline-block mb-0 bg-blue-700 text-white pt-0.5 pb-0.5 pl-2.5  pr-2 rounded-md">
+                    $6
+                </span>
+            </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

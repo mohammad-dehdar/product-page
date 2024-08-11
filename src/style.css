@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    :where(button) {
+        @apply bg-blue-700 text-white  h-9 w-[100px]  pt-0.5 pb-0.5 pl-1 pr-1 rounded-md cursor-pointer text-lg mr-1 !important; 
+    }
+    /* :where(.product-item) {
+        @apply bg-white w-80 mt-7 mb-7 shdow-md shadow-gray-500 rounded-lg overflow-hidden p-3.5;
+    }
+    :where(.product-item>img) {
+        @apply w-72 rounded-lg mb-5; 
+    }
+} */
+}
